@@ -53,9 +53,10 @@ body {
 }
 
 .container {
-    width: 1360px;
-    max-width: 1600px;
+    width: 90%;
+    max-width: 1360px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 #navbar {
@@ -63,7 +64,9 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: var(--nav-size);
+    padding: 0 1rem;
 }
+
 
 .menu {
     display: flex;
@@ -84,8 +87,10 @@ body {
 
 #banner-section {
     background: url(../assets/images/hero-bg.png) no-repeat center/cover;
-    height: calc(100vh - var(--nav-size));
+    height: auto;
+    padding: 4rem 0;
 }
+
 
 .banner-container {
     display: flex;
@@ -207,8 +212,10 @@ body {
 }
 
 .note-cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--gap);
+    margin-top: 2rem;
 }
 
 .card {
@@ -218,10 +225,11 @@ body {
     flex-direction: column;
     text-align: center;
     gap: var(--gap);
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 300px;
     margin-top: 2rem;
-    padding: 0 var(--gap);
+    padding: var(--gap);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
 }
@@ -242,6 +250,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--gap);
 }
 
 .second-brain-badge {
@@ -251,11 +260,9 @@ body {
 }
 
 .second-brain-content {
-    width: 700px;
-    height: 397px;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
+    width: 100%;
+    max-width: 700px;
+    padding: 0 1rem;
 }
 
 .second-brain-heading {
@@ -286,12 +293,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     gap: var(--gap);
     background-color: var(--off-white);
-    padding: var(--gap);
-    height: 385px;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    height: auto;
 }
+
 
 .challenge-heading {
     font-size: 40px;
@@ -300,6 +308,7 @@ body {
 .challenge-descriptions {
     line-height: 20px;
     opacity: var(--opacity);
+    text-align: center;
 }
 
 .btn-challenge {
@@ -322,6 +331,10 @@ body {
 footer {
     background-color: #001931;
     color: var(--white);
+}
+
+.footer-container {
+    margin-top: 2rem;
 }
 
 .logo-social-links {
