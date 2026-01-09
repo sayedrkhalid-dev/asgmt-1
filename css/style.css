@@ -20,6 +20,7 @@ a {
 
     --nav-size: 70px;
     --gap: 1rem;
+    --margin-top: 4rem;
 }
 
 body {
@@ -90,7 +91,6 @@ body {
     height: auto;
     padding: 4rem 0;
 }
-
 
 .banner-container {
     display: flex;
@@ -190,10 +190,6 @@ body {
 }
 
 /* Notes Section */
-#note-section {
-    margin: 2rem 0;
-}
-
 .note-container {
     display: flex;
     flex-direction: column;
@@ -251,6 +247,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: var(--gap);
+    margin-top: var(--margin-top);
 }
 
 .second-brain-badge {
@@ -296,7 +293,7 @@ body {
     gap: var(--gap);
     background-color: var(--off-white);
     padding: 4rem 2rem;
-    margin-top: 2rem;
+    margin-top: var(--margin-top);
     height: auto;
 }
 
@@ -334,19 +331,14 @@ footer {
 }
 
 .footer-container {
-    margin-top: 2rem;
+    margin-top: var(--margin-top);
 }
 
 .logo-social-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 350px;
-}
-
-footer .logo {
-    width: 140px;
-    height: 60px;
+    height: 280px;
 }
 
 .links {
