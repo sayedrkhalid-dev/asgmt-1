@@ -12,8 +12,11 @@ a {
 
 :root {
     --primary: rgb(48, 184, 104);
-    --white: #fff;
+    --secondary: rgb(249, 85, 85);
+    --white: rgb(255, 255, 255);
+    --off-white: rgb(247, 246, 242);
     --dark: #000;
+    --opacity: 0.6;
 
     --nav-size: 70px;
     --gap: 1rem;
@@ -34,6 +37,7 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    font-size: 18px;
     font-weight: 600;
     background-color: var(--primary);
     color: var(--white);
@@ -151,14 +155,14 @@ body {
     color: var(--primary);
 }
 
-.banner-discriptions {
+.banner-descriptions {
     font-size: 18px;
     line-height: 40px;
     color: var(--white);
-    opacity: 0.9;
+    opacity: var(--opacity);
 }
 
-.banner-btns  {
+.banner-btns {
     display: flex;
     gap: var(--gap);
 }
@@ -174,7 +178,189 @@ body {
     align-items: center;
     gap: calc(var(--gap) / 2);
 }
+
 .banner-btns a img {
     width: 16px;
     aspect-ratio: 1;
+}
+
+/* Notes Section */
+#note-section {
+    margin: 2rem 0;
+}
+
+.note-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    height: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.note-heading {
+    font-size: 48px;
+}
+
+.note-title {
+    opacity: var(--opacity);
+}
+
+.note-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--gap);
+    width: 320px;
+    height: 300px;
+    margin-top: 2rem;
+    padding: 0 var(--gap);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.card img {
+    background-color: var(--secondary);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.card-description {
+    line-height: 20px;
+    opacity: var(--opacity);
+}
+
+/* Second brain section */
+.second-brain-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-brain-badge {
+    line-height: 20px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.second-brain-content {
+    width: 700px;
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.second-brain-heading {
+    font-size: 48px;
+}
+
+.second-brain-descriptions {
+    line-height: 20px;
+    opacity: var(--opacity);
+}
+
+.second-brain-list {
+    list-style-type: none;
+}
+
+.second-brain-list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+    gap: 8px;
+    line-height: 20px;
+}
+
+/* Challenge section */
+.challenge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--gap);
+    background-color: var(--off-white);
+    padding: var(--gap);
+    height: 385px;
+}
+
+.challenge-heading {
+    font-size: 40px;
+}
+
+.challenge-descriptions {
+    line-height: 20px;
+    opacity: var(--opacity);
+}
+
+.btn-challenge {
+    margin-top: 2rem;
+}
+
+.btn-challenge a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.btn-challenge a img {
+    width: 16px;
+    aspect-ratio: 1;
+}
+
+/* Footer section */
+footer {
+    background-color: #001931;
+    color: var(--white);
+}
+
+.logo-social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+}
+
+footer .logo {
+    width: 140px;
+    height: 60px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.links p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social-links {
+    list-style-type: none;
+    display: flex;
+    gap: var(--gap);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--white);
+    opacity: 0.2;
+}
+
+.copy-rights {
+    text-align: center;
+    padding: 2rem 0;
 }
